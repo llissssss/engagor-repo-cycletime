@@ -1,10 +1,20 @@
-# Slim Framework 4 Skeleton Application
+## What?
 
-[![Coverage Status](https://coveralls.io/repos/github/slimphp/Slim-Skeleton/badge.svg?branch=master)](https://coveralls.io/github/slimphp/Slim-Skeleton?branch=master)
+Calcultes days between PRs have added labels to see how long they last to transition from one state to another.
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 4 application. This application uses the latest Slim 4 with Slim PSR-7 implementation and PHP-DI container implementation. It also uses the Monolog logger.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+## How 
+
+Modify \App\Application\GithubClient::USERNAME
+and \App\Application\GithubClient::PERSONAL_TOKEN
+
+To provide a valid Github user and personal token.
+
+Start the app
+`composer start` to run it in local
+
+It will generate a file to export.
+
 
 ## Install the Application
 
@@ -25,18 +35,3 @@ To run the application in development, you can run these commands
 cd [my-app-name]
 composer start
 ```
-
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
-```bash
-cd [my-app-name]
-docker-compose up -d
-```
-After that, open `http://localhost:8080` in your browser.
-
-Run this command in the application directory to run the test suite
-
-```bash
-composer test
-```
-
-That's it! Now go build something cool.
